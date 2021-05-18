@@ -1,0 +1,27 @@
+Hello,
+
+I was trying to upload files to a remote directory to replace the files that were there.
+
+This is what I did in the git bash:
+
+   94  cd clarify
+   95  git init
+   96  git add -A
+   97  git commit -m "code with new sthlp files"
+   98  git remote add origin git@github.com:iqss-research/clarify
+   99  git push
+  100  git push --set-upstream origin master
+  101  git remote add origin https://github.com/iqss-research/clarify.git
+  102  git remote rm origin
+  103  git remote add origin https://github.com/iqss-research/clarify.git
+  104  git remote -v
+  105  git push
+  106  git push --set-upstream origin master
+  107  git push --set-upstream origin master -f
+
+
+At this point I realized that I had lost the previous history of commits. I tried the git reflog but it doesn't tell me what was there. How can I get the commits back?
+
+Thanks,
+
+Zagreb
